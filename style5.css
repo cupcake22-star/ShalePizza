@@ -1,0 +1,92 @@
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        font-family: "https://fonts.googleapis.com/css2?family=Lobster&display=swap";
+        scroll-behavior: smooth;
+      }
+      /* nav bar */
+      .navbar{
+        background-color:rgb(126, 3, 3);        
+      }
+      .navbar-brand{
+       color: white;
+      font-family: 'Lobster', cursive;
+      font-weight: bold;
+      margin-left: 10px; 
+      }      
+      .dropdown-menu{
+        background-color:rgb(126, 3, 3);
+      }
+      .dropdown-item:hover{
+        background-color: brown;
+      }
+      /* home page start */
+      #home{
+        min-height: 100vh;
+        height: 100%;
+        background-color:black;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      #home .home_text h1{
+          animation: fadeIn 5s;
+          margin-bottom: 20px;
+          margin-left: 20px;
+          font-size: 3.910rem;
+          font-weight: 700;
+          line-height: 4.938rem;
+          color: white;
+          padding: 1.063rem 0;
+          margin-top: 40px;
+      }
+      @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+      }
+      #home .home_text p{
+        font-size: 20px;
+        color: rgb(234, 234, 65);
+        margin-top: 15px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        animation: fadeIn 6s;
+      }
+      #home .home_button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      #home .home_button .btn{
+        padding: 1rem 2rem;
+        margin-left: 1.1rem;
+        color: white;
+        font-weight: bold;
+        background-color:rgb(126, 3, 3);
+        display: flex;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        text-decoration:underline;
+      }
+      #home .home_button .btn:hover{
+        transform: translateY(-0.313rem);
+        background-color:rgb(131, 0, 0) ;
+        box-shadow:0 0 10px 3px rgb(131, 0, 0);
+        border-color:rgb(131, 0, 0) ;
+      }
+      .home-image{
+        text-align: center;
+      } 
+      .home-image img{
+        width: 400px;
+        height: 450px;
+        margin-top: 40px;
+        animation: fadeIn 7s;
+      }
+      /* home page end */

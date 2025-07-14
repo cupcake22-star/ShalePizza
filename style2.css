@@ -1,0 +1,553 @@
+      /* menu page start */
+
+body {
+  background: #000;
+      color: #fff;
+  font-family: 'Roboto' , sans-serif;
+  margin: 0;
+  padding: 0;
+   
+}
+
+.main-heading {
+  margin-top: 40px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #ff0008;
+  font-family: 'Pacifico', cursive;
+
+ color: #d61818; /* lightning yellow */
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #ff0,
+        0 0 20px #ff9900,
+        0 0 30px #ff0,
+        0 0 40px #f9d71c;
+    animation: flicker 1.5s infinite alternate;
+      }
+      @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+      }
+.sub-heading {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 4rem;
+  font-family: 'Pacifico', cursive;
+  color: #ffcc00;
+  
+    text-shadow: 0 0 5px #ff00009b;
+  }
+  to {
+    text-shadow: 0 0 20px #ff9500, 0 0 30px #ffd500;
+  }
+
+   .card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+   }
+
+.card:hover {
+  transform: translateY(-5px);
+  animation: cheeseMelt 0.6s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffc022, 0 0 30px #ff9800;
+ }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+    height: 300px;
+   }
+
+  .card-body {
+  text-align: center;
+  animation: glow 2s infinite alternate;
+  }
+ .card-title {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+  .card-text {
+  color: #6c757d;
+}
+.menu-title {
+font-family: 'Pacifico', cursive;
+color: #d62828;
+margin-top: 2rem;
+animation: pulseGlow 2s infinite alternate;
+text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  
+ }
+
+@keyframes glow {
+from {
+  text-shadow: 0 0 5px #ff4e00;
+}
+to {
+  text-shadow: 0 0 20px #ff9500, 0 0 30px #ffd500;
+}
+}
+@keyframes pulseGlow {
+0% { text-shadow: 0 0 10px #ff5722; }
+100% { text-shadow: 0 0 25px #ff9800; }
+}
+
+.circle-card {
+border: none;
+background: transparent;
+text-align: center;
+transition: transform 0.4s;
+}
+
+.circle-card:hover {  
+transform: scale(1.1);
+}
+
+.circle-img {
+width: 320px;
+height: 320px;
+object-fit: cover;
+border-radius: 50%;
+border: 6px solid #ffffff;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+transition: box-shadow 0.4s ease;
+}
+
+.circle-img:hover {
+box-shadow: 0 0 20px #ff5722, 0 0 30px #ff9800;
+}
+
+.btn-lightning {
+      position: relative;
+      display: inline-block;
+      padding: 10px ;
+      width: auto;
+      color: #fff;
+      background-color: #e6d300f6;
+      border: none;
+      border-radius: 7px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-lightning::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, #fff, transparent);
+      transition: left 0.5s;
+    }
+
+    .btn-lightning:hover::before {
+      left: 100%;
+    }
+
+    .btn-lightning:hover {
+      background-color: #c41010;
+    }
+
+    .lightning-icon {
+      margin-right: 10px;
+    }
+     /* menu page End */
+
+
+
+      /* franchise page start */
+     h2 {
+    font-family: 'Lobster', cursive;
+    color: orange; 
+  }
+     h5 {
+    font-family: 'Lobster', cursive;
+    color: orange;
+  }
+    .franchise-heading {
+      color:      red;
+      font-weight: bold;
+      font-size: 60px;
+       text-shadow: 0 0 5px #e5ff00df;
+}
+to {
+  text-shadow: 0 0 20px #ffd500, 0 0 30px #ffd500;
+}
+    .card-title {
+      color:      red;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .location-card {
+      background-color: #1a1a1a;
+      box-shadow:      red;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .location-card:hover {
+      transform: scale(1.02);
+    }
+
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .store-card {
+      background-color: #1a1a1a;
+      color: white;
+      border: 2px solid  red;
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s;
+    
+    min-height: 220px; /* adjust as needed */
+}
+
+    
+
+    .store-card:hover {
+      transform: scale(1.03);
+      border-color: red;
+    }
+
+    .store-title {
+      color:     red;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+      /* franchise page End */
+
+
+
+      /* Feedback Section start */
+#feedback{
+  padding: 100px 30px;
+  text-align: center;
+  background-color: #000;
+}
+
+#feedback h2 {
+  font-size: 3em;
+  color: #c41010;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive;
+   text-shadow: 0 0 5px #e5ff00df;
+}
+to {
+  text-shadow: 0 0 20px #ffd500, 0 0 30px #ffd500;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.feedback-form input:hover,
+.feedback-form select:hover,
+.feedback-form textarea:hover,
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #eeff00;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.feedback-form button:hover {
+  background: #e0d100;
+  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff000d;
+}
+
+/* Review Section */
+.review-section {
+  background-color: #000;
+  padding: 100px 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.review-section h2 {
+  font-size: 3.5rem;
+  color: #ff0000be;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 40px;
+   text-shadow: 0 0 5px #e5ff00df;
+}
+to {
+  text-shadow: 0 0 20px #ffd500, 0 0 30px #ffd500;
+}
+
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background-color: #111;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(255, 0, 0, 0.563);
+}
+
+.review-card h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6rem;
+  color:#ff0000be ;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  color: #eee;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .feedback-section,
+  .review-section {
+    padding: 60px 20px;
+  }
+
+  .feedback-section h2,
+  .review-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Feedback Section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact us start */
+
+  body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: black;
+      padding: 40px 15px;
+    }
+
+    .contact-card {
+      background: rgb(110, 4, 4);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-card h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: center;
+      color: white;
+       text-shadow: 0 0 5px #e5ff00df;
+}
+to {
+  text-shadow: 0 0 20px #ffd500, 0 0 30px #ffd500;
+}
+    
+
+    .form-label {
+      font-weight: 600;
+      color: white;
+    }
+
+    .form-control,
+    .btn {
+      border-radius: 6px;
+    }
+
+    .btn-yellow {
+      background-color: yellow;
+      color: black;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn-yellow:hover {
+      background-color: gold;
+      transform: scale(1.03);
+    }
+
+    .info-box {
+      margin-top: 40px;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .info-box i {
+      font-size: 1.5rem;
+      color: #f1c40f;
+      margin-right: 8px;
+    }
+/* contact us end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer section start */
+   footer { 
+           font-family: 'Lobster', cursive;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 10px;
+            width: 100%;
+        }
+        footer div {
+            width: 200px;
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            /* width: calc(100% - 22px); */
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .footer-button {
+            padding: 10px;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+        .footer-button:hover {
+            background-color:  #f39c12;
+        }
+        .copyright {
+             width: 100%;
+            text-align: center;
+            font-size: 16px; 
+            color:white ;
+            margin-top: 30px;
+        }
+        .copyright p{
+          text-align: center;
+        }
+    hr{
+      width: 100%;
+      color: white;
+    }
+      /* footer section End */
